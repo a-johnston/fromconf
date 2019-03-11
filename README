@@ -1,0 +1,2 @@
+Small demo of a mixin for translating config to interface implementation using
+a requirement decorator and the field validation provided by pyrsistent.
