@@ -54,6 +54,12 @@ class FromConf(PClass):
     """
 
     @classmethod
+    def create(cls, arg):
+        if isinstance(arg, cls):
+            return arg
+        return cls.from_conf(arg)
+
+    @classmethod
     def from_conf(cls, conf):
         """Instantiates and returns a subclass which is matched by the given
         dict-like conf parameter.
